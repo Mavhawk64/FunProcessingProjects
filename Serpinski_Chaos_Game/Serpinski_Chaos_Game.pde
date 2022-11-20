@@ -4,7 +4,6 @@ int points = 3;
 int ticks = 1000;
 int rec = 7;
 void setup() {
-  //size(700, 700);
   fullScreen();
   background(0);
   a = new ArrayList<ArrayList<PVector>>();
@@ -20,22 +19,6 @@ void setup() {
   stroke(255, 255, 255, 200);
   point(rw, rh);
 
-  //Hard code:
-  //a.get(0).add(new PVector(width/2, 0));
-  //a.get(0).add(new PVector(0, height));
-  //a.get(0).add(new PVector(width, height));
-
-  //a.get(1).add(new PVector(width/2, height));
-  //a.get(1).add(new PVector(width*3/4, height/2));
-  //a.get(1).add(new PVector(width/4, height/2));
-
-  //a.get(2).add(new PVector(width/2, height/2));
-  //a.get(2).add(new PVector(width*3/8, height*3/4));
-  //a.get(2).add(new PVector(width*5/8, height*3/4));
-
-  //a.get(3).add(new PVector(width/2, height*6/8));
-  //a.get(3).add(new PVector(width*9/16, height*5/8));
-  //a.get(3).add(new PVector(width*7/16, height*5/8));
   float hp = 0;
   float hc = height;
   float wl = 0;
@@ -59,12 +42,6 @@ void setup() {
     hp = hc;
     hc = (temp + hc) / 2;
   }
-
-  //float w = 1.0/2 + 1.0/16;
-  //w*=width;
-  //float h = 5.0/8;
-  //h*=height;
-  //circle(w, h, 10);
 }
 
 void draw() {
